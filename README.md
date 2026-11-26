@@ -57,3 +57,90 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Sistem Informasi Mahasiswa (SIM)
+
+## Deskripsi Proyek
+Sistem Informasi Mahasiswa (SIM) merupakan aplikasi berbasis web yang dikembangkan menggunakan framework Laravel. Aplikasi ini bertujuan untuk membantu pengelolaan data mahasiswa, program studi, dan informasi akademik secara terstruktur dan efisien.
+
+## Tujuan
+1. Mempermudah pengelolaan data mahasiswa.
+2. Mempermudah pengelolaan data program studi.
+3. Menyediakan sistem autentikasi pengguna.
+4. Membantu penyajian informasi melalui dashboard.
+
+## Fitur Utama
+- **Autentikasi:** Login, registrasi, dan logout.
+- **Data Mahasiswa:** Pengelolaan NIM, nama, program studi, angkatan, dan email.
+- **Program Studi:** Pengelolaan kode dan nama program studi.
+- **Pengguna:** Manajemen akun pengguna.
+- **Dashboard:** Menampilkan statistik jumlah mahasiswa dan sebaran program studi.
+- **Pencarian dan Filter:** Pencarian mahasiswa berdasarkan NIM, nama, dan program studi.
+
+## Teknologi yang Digunakan
+- PHP 8.1 atau lebih baru.
+- Laravel Framework.
+- Composer.
+- MySQL atau database yang dikonfigurasi pada proyek.
+- Git dan GitHub.
+- Node.js untuk pengelolaan frontend jika diperlukan.
+
+## Persyaratan Instalasi
+Pastikan perangkat telah memiliki:
+- PHP.
+- Composer.
+- Git.
+- Web server dan database.
+- Node.js dan NPM jika diperlukan untuk frontend.
+
+## Cara Instalasi
+
+1. Clone repository:
+
+   `git clone URL-REPOSITORY-GITHUB`
+
+2. Masuk ke direktori proyek:
+
+   `cd sim`
+
+3. Instal dependensi:
+
+   `composer install`
+
+4. Salin file konfigurasi:
+
+   `Copy-Item .env.example .env`
+
+5. Atur konfigurasi database pada file `.env`.
+
+6. Generate application key:
+
+   `php artisan key:generate`
+
+7. Jalankan migration:
+
+   `php artisan migrate`
+
+8. Jalankan aplikasi:
+
+   `php artisan serve`
+
+9. Buka browser pada alamat:
+
+   `http://127.0.0.1:8000`
+
+## Pengelolaan Versi
+Proyek menggunakan Git dan GitHub sebagai sistem pengelolaan versi.
+
+Perintah dasar:
+- `git status` – melihat status perubahan.
+- `git add .` – menambahkan perubahan.
+- `git commit -m "pesan"` – menyimpan perubahan.
+- `git push origin main` – mengirim perubahan ke GitHub.
+- `git pull origin main` – mengambil perubahan terbaru.
+
+## Catatan
+Folder `vendor/`, `node_modules/`, dan file `.env` tidak boleh dimasukkan ke repository karena berisi dependensi dan konfigurasi lokal atau informasi sensitif.
+
+---
+Proyek Praktikum Version Control System (VCS) – Laravel SIM.
