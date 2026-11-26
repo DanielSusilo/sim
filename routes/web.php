@@ -21,3 +21,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+// Route modul sistem informasi mahasiswa
+
+// Route modul sistem informasi mahasiswa
